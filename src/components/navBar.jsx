@@ -4,10 +4,10 @@ import '../App.css'
 
 const NavBar = ({ user }) => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light" style={{ background: "green" }}>
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light" style={{ "background": "lightgrey" }}>
+      <div className="container-fluid">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-mdb-toggle="collapse"
           data-mdb-target="#navbarSupportedContent"
@@ -15,11 +15,11 @@ const NavBar = ({ user }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </button>
     
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <Link class="navbar-brand mt-2 mt-lg-0" to="#">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <Link className="navbar-brand mt-2 mt-lg-0" to="#">
             Rently
           </Link>
           <div className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -36,7 +36,7 @@ const NavBar = ({ user }) => {
             </NavLink>}
           </div>
         </div>
-        <div class="d-flex align-items-center">
+        <div className="d-flex align-items-center">
           {!user && (
             <React.Fragment>
               <NavLink className="nav-item nav-link" to="/login">

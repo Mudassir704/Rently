@@ -148,9 +148,8 @@ class Rentals extends Component {
       return <h3 style={{ 
         "height": "100%",
         "display": "flex",
-        "justify-content": "center",
+        "justifyContent": "center",
         "alignItems": "center",
-        "align-items": "center"
        }}>You don't have rentals{'\n'} Let's try rental with zero rental fee for a Day!!!!</h3>
     return (
       <div>

@@ -5,9 +5,8 @@ function Loading() {
         <div className="col" style={{
             "height": "100%",
             "display": "flex",
-            "justify-content": "center",
-            "alignItems": "center",
-            "align-items": "center"}}>
+            "justifyContent": "center",
+            "alignItems": "center"}}>
             <i className="fa fa-spinner fa-lg"/>
             <p>Loading....</p>
           </div>

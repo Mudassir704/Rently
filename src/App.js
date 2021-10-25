@@ -14,6 +14,7 @@ import { ToastContainer } from 'react-toastify';
 import { getCurrnetUser } from './services/authService';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import Profile from './components/profile';
 
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
             <Route path="/login" component={LoginForm}></Route>
             <Route path="/logout" component={Logout}></Route>
             <Route path="/register" component={RegisterForm}></Route>
+            <Route path="/profile" render={props => <Profile {...props} user={user} />}></Route>
             <Route path="/not-found" component={NotFound}></Route>
             <Redirect from="/" exact to="/movies"/>
             <Redirect to="/not-found"/>

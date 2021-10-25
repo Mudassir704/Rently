@@ -58,6 +58,7 @@ class Movies extends Component {
     for(var d in data){
       if(data[d].user._id === user._id && data[d].movie._id === movie._id){
         toast.info("Already Rented");
+        this.setState({ rentLoading: false });
         return;
       }
     }
@@ -68,6 +69,7 @@ class Movies extends Component {
     } catch (ex) {
       this.setState({ rentLoading: false });
       console.log(ex.response.data);
+      this.setState({ rentLoading: false });
     }
     this.setState({ rentLoading: false });
   }
